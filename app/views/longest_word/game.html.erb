@@ -1,0 +1,29 @@
+<div class="text-center">
+
+  <h1> ******** Welcome to the longest word-game !******** </h1>
+  <div class="box">
+    <h2> Here is your grid : </h2>
+    <%= @grid.join(" - ") %>
+    <h2>*****************************************************</h2>
+  </div>
+
+  <div class="box">
+    <h2>What's your best shot ?"</h2>
+    <!-- <%  @start_time = Time.now %> -->
+
+    <form action="/score" method="get">
+      <input type="text" name="attempt">
+      <input type="submit">
+    </form>
+  </div>
+
+  <!-- <form action="/score" method="post">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <input type="text" name="attempt">
+    <input type="submit">
+  </form> -->
+
+  <!-- <% @end_time = Time.now %> -->
+  <h2>"*****************************************************"</h2>
+
+</div>

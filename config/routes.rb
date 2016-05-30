@@ -1,9 +1,15 @@
 Rails.application.routes.draw do
+  get 'game', to: 'longest_word#game'
+  # get 'longest_word/game'
+  get 'score', to: 'longest_word#score'
+  # get 'longest_word/score'
+  root 'longest_word#game'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
